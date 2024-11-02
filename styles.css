@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #d69215;
+    color: rgb(160, 213, 181);
+    padding: 15px 20px;
+    transition: background-color 0.3s, padding 0.3s;
+    z-index: 1000; /* Ensure the nav is above other content */
+}
+
+nav.scrolled {
+    background-color: #df89aa;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: rgb(12, 13, 3);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #708fa2;
+}
+
+.content {
+    margin-top: 80px; /* To avoid content being hidden behind the fixed nav */
+}
+
+section {
+    height: 100vh; /* Make each section full height */
+    padding: 20px;
+    background: #cce4f1;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
